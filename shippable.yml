@@ -27,7 +27,7 @@ integrations:
         - "#testIssues"
   deploy:
     - type: aws
-      integrationName: Ebs-Test
+      integrationName: aws-test
       target: ebs_docker
       application_name: node-test-app-shippable
       s3_bucket_name: node-test-bucket
