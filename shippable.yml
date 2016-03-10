@@ -31,8 +31,15 @@ integrations:
         - "#harryi3t"
         - "#testIssues"
   deploy:
-    - platform_type: docker
-      application_name: "node-test-app-shippable"
-      s3_bucket_name: "node-test-bucket"
-      env_name: "nodetestapp-1"
-      region: "us-east-1"
+    - type: aws
+      integrationName: Ebs-Test
+      target: ebs_docker
+      application_name: node-test-app-shippable
+      s3_bucket_name: node-test-bucket
+      env_name: nodetestapp-1
+      region: us-east-1
+      branches:
+        only:
+          - master
+        except:
+          - test
