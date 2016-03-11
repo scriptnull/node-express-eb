@@ -18,7 +18,7 @@ integrations:
   deploy:
     - type: aws
       integrationName: aws-test
-      target: ebs_paas
+      target: eb_paas
       application_name: node-test-app-shippable
       s3_bucket_name: node-test-bucket
       env_name: nodetestapp-1
