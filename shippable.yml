@@ -23,6 +23,17 @@ integrations:
       s3_bucket_name: node-test-bucket
       env_name: nodetestapp-1
       region: us-east-1
-      branches:
-        only:
-          - master
+    - type: aws
+      integrationName: aws-test
+      target: eb_docker
+      application_name: node-docker
+      s3_bucket_name: node-docker-bucket
+      env_name: nodetestapp-docker-1
+      region: us-east-1
+    - type: aws
+      integrationName: aws-test
+      target: eb_paas
+      application_name: node-paas-2
+      s3_bucket_name: node-test-bucket
+      env_name: nodetestapp-1
+      region: us-east-1
