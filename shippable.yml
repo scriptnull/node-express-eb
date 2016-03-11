@@ -6,14 +6,9 @@ node_js:
   - "5.3"
 
 build:
-  pre_ci_boot:
-    image_name: drydock/u14nod
-    image_tag: prod
-    pull: false
-
   ci:
     - node --version
-    - pip install awsebcli
+
   post_ci:
     - echo "post_ci"
     # - cd /root/src/github.com/harryi3t/node-express-eb
