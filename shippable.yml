@@ -15,7 +15,7 @@ build:
     - node --version
     - pip install awsebcli
   post_ci:
-    - cd /root/src/github.com/ttrahan/node-express-eb
+    - cd /root/src/github.com/harryi3t/node-express-eb
     - eb deploy
 
 integrations:
