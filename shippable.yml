@@ -17,7 +17,7 @@ build:
 integrations:
   deploy:
     - type: aws
-      integrationName: aws-test
+      integrationName: Vishnu's AWS
       target: eb_paas
       application_name: sample-app-vb-2
       env_name: not-present
