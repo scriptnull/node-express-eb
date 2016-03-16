@@ -19,10 +19,6 @@ integrations:
     - type: aws
       integrationName: aws-test
       target: eb_paas
-      application_name: node-test-app-shippable
-      s3_bucket_name: node-test-bucket
-      env_name: nodetestapp-1
+      application_name: sample-app-vb-2
+      env_name: not-present
       region: us-east-1
-      branches:
-        only:
-          - master
