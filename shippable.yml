@@ -18,7 +18,7 @@ integrations:
   deploy:
     - type: aws
       integrationName: Vishnu's AWS
-      target: eb_paas
+      target: ebs_paas
       application_name: sample-app-vb-2
       env_name: not-present
       region: us-east-1
