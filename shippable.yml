@@ -20,5 +20,6 @@ integrations:
       integrationName: Vishnu's AWS
       target: ebs_paas
       application_name: sample-app-vb-2
+      platform: "Node.js"
       env_name: not-present
       region: us-east-1
