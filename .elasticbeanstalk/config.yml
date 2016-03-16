@@ -1,10 +1,14 @@
 branch-defaults:
-  master:
-    environment: expressapp-dev
+  default:
+    environment: null
+    group_suffix: null
+  override-init:
+    environment: sample-app-vb-localhost
+    group_suffix: null
 global:
-  application_name: expressapp
+  application_name: sample-app-vb
   default_ec2_keyname: null
   default_platform: Node.js
   default_region: us-east-1
-  profile: null
+  profile: eb-cli
   sc: git
